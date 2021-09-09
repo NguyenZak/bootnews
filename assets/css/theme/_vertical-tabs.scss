@@ -1,0 +1,86 @@
+/*------------------------------------
+	Vertical tabs
+------------------------------------*/
+.vertical-tabs {
+	background: $light;
+	.nav {
+		&.nav-tabs {
+			float: left;
+			display: block;
+			border-bottom: 0;
+			margin-right: $vertical-navtabs-right;
+			border-right: $border-color $vertical-navtabs-border-right solid;
+		}
+	}
+	.nav-tabs {
+		.nav-link {
+			border: $vertical-navlink-border solid transparent;
+			border-top-left-radius: $vertical-navlink-radius !important;
+			border-top-right-radius: $vertical-navlink-radius !important;
+		}
+	}
+	.tab-content {
+		&> .active {
+			display: block;
+			min-height: $vertical-content-height;
+		}
+	}
+	ul {
+		li {
+			margin-right: $vertical-li-margin-right;
+		}
+	}
+}
+.navbar-nav {
+	.vertical-tabs {
+		.nav-tabs {
+			.nav-link {
+				&.active {
+					color: $vertical-navlink-color;
+					border-color: $vertical-navlink-border-color;
+					background-color: $vertical-navlink-bg-color;
+				}
+			}
+		}
+	}
+}
+.navbar-dark {
+	.vertical-tabs {
+		background: $dark;
+		border-color: $dark;
+    }
+}
+
+/*------------------------------------
+	Sidebar tabs
+------------------------------------*/
+//@extend-elements
+//original selectors
+//.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link
+%extend_sidetabs {
+	color: $sidetabs-color;
+	background-color: $nav-tabs-background;
+	border-color: $nav-tabs-border;
+}
+.nav-tabs {
+	.nav-link {
+		border-color: $nav-tabs-border-hover;
+		&.active {
+			@extend %extend_sidetabs;
+			&:hover {
+				border-color: $nav-tabs-border-active;
+			}
+			&:focus {
+				border-color: $nav-tabs-border-active;
+			}
+		}
+		&:hover, &:focus {
+			border-color: $nav-tabs-border-hover;
+		}
+	}
+	.nav-item.show {
+		.nav-link {
+			@extend %extend_sidetabs;
+		}
+	}
+}

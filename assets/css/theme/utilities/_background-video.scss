@@ -1,0 +1,83 @@
+/*------------------------------------
+	Video Background
+------------------------------------*/
+.background-video {
+	position: relative;
+	background-color: $background-video-background;
+	height: $background-video-height;
+	min-height: $background-video-min-height;
+	width: 100%;
+	overflow: hidden;
+	iframe {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: 0;
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+	video {
+		width: auto;
+		height: auto;
+	}
+	.video-youtube-area{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: $black;
+		opacity: 0.5;
+		z-index: 1;
+	}
+}
+.mini-line{
+	margin: $mini-line-margin;
+	width: $mini-line-width;
+	border-top: $mini-line-border-top;
+}
+@include media-breakpoint-down(sm) {
+	.background-video {
+		height: $background-video-height-sm;
+		min-height: 0;
+	}
+}
+@include media-breakpoint-up(sm) {
+	.background-video {
+		height: $background-video-height-sm-up;
+		min-height: $background-video-min-height-sm;
+	}
+}
+@include media-breakpoint-up(md) {
+	.background-video {
+		height: $background-video-height-sm-md;
+		min-height: $background-video-min-height-sm;
+	}
+}
+@include media-breakpoint-up(lg) {
+	.background-video {
+		height: $background-video-height-sm-lg;
+		min-height: $background-video-min-height-md;
+	}
+}

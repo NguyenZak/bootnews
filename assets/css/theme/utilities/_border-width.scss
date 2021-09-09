@@ -1,0 +1,52 @@
+/*------------------------------------
+	Border width
+------------------------------------*/
+.border-none {
+	border-width: 0 !important;
+}
+.border-1 {
+	border-width: $border-one !important;
+}
+.border-2 {
+	border-width: $border-two !important;
+}
+.border-3 {
+	border-width: $border-three !important;
+}
+.border-4 {
+	border-width: $border-four !important;
+}
+.border-5 {
+	border-width: $border-five !important;
+}
+// border smooth dark
+.border-smooth {
+	border-color: $border-smooth !important;
+}
+// border smooth light
+.border-smooth-light {
+	border-color: $border-smooth-light !important;
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		.border#{$infix}-0 {
+			border-width: 0px !important;
+		}
+		.border#{$infix}-1 {
+			border-width: $border-one !important;
+		}
+		.border#{$infix}-2 {
+			border-width: $border-two !important;
+		}
+		.border#{$infix}-3 {
+			border-width: $border-three !important;
+		}
+		.border#{$infix}-4 {
+			border-width: $border-four !important;
+		}
+		.border#{$infix}-5 {
+			border-width: $border-five !important;
+		}
+	}
+}

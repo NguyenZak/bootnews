@@ -1,0 +1,19 @@
+/*------------------------------------
+  Widget Score
+------------------------------------*/
+.match-score {
+	text-align: center;
+	> li {
+		padding: $score-li-padding;
+		&:hover {
+			background-color: $score-li-hover-bg;
+		}
+	}
+}
+.match-title {
+	padding: $score-title-padding;
+	background-color: $score-title-bg;
+}
+.teamname {
+	font-weight: $font-weight-600;
+}

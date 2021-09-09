@@ -1,0 +1,15 @@
+/*------------------------------------
+	Archive
+------------------------------------*/
+.rotate-down {
+	-ms-transform: $rotate-downs;
+	-webkit-transform: $rotate-downs;
+	transform: $rotate-downs;
+}
+.collapsed {
+	.rotate-down {
+		-ms-transform: $collapse-rotate-downs;
+		-webkit-transform: $collapse-rotate-downs;
+		transform: $collapse-rotate-downs;
+	}
+}

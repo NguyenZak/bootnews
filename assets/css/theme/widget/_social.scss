@@ -1,0 +1,132 @@
+/*------------------------------------
+	Widget Social
+------------------------------------*/
+.social-two, .social-one {
+	li {
+		float: left;
+		width: $social2-width-li;
+		&:nth-child(even) {
+			float: right;
+		}
+		a {
+			display: block;
+			font-size: $social2-li-a-font;
+			line-height: $social2-li-a-height;
+			border-radius: $social2-li-a-radius;
+			&:hover {
+				opacity: $opacity-09;
+			}
+			&:focus {
+				opacity: $opacity-09;
+			}
+		}
+		a::before {
+			float: left;
+			margin-left: $font-a-margin-left;
+			vertical-align: inherit;
+			border-top: inherit;
+			border-right: inherit;
+			border-bottom: 0;
+			border-left: inherit;
+			width: $social-a-before-width;
+			height: $social-a-before-height;
+			text-align: center;
+			background-color: $social-a-before-bg;
+			margin: 0;
+			margin-right: $social-a-before-margin;
+			background-repeat: no-repeat;
+			background-position: center;
+			vertical-align: middle;
+			background-size: 1rem;
+			content: "";
+		}
+	}
+	.facebook a::before {
+		background-image: escape-svg($icon-facebook);
+	}
+	.twitter a::before {
+		background-image: escape-svg($icon-twitter);
+	}
+	.vk a::before {
+		background-image: escape-svg($icon-vk);
+	}
+	.instagram a::before {
+		background-image: escape-svg($icon-instagram);
+	}
+	.youtube a::before {
+		background-image: escape-svg($icon-youtube);
+	}
+	.linkedin a::before {
+		background-image: escape-svg($icon-linkedin);
+	}
+	.vimeo a::before {
+		background-image: escape-svg($icon-vimeo);
+	}
+	.pinterest a::before {
+		background-image: escape-svg($icon-pinterest);
+	}
+	.telegram a::before {
+		background-image: escape-svg($icon-telegram);
+	}
+}
+.social-three {
+	li{
+		margin: 0 -1px -1px 0 !important;
+		&:hover {
+			opacity: $opacity-09;
+		}
+		&:focus {
+			opacity: $opacity-09;
+		}
+	}
+}
+.btn-social {
+	&:hover {
+		opacity: $opacity-09;
+	}
+	&:focus {
+		opacity: $opacity-09;
+	}
+}
+@include media-breakpoint-up(md) {
+	.social-two, .social-one {
+		li {
+			width: $social2-width-li-md;
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.social-two {
+		li {
+			width: $social2-width-li;
+		}
+	}
+}
+/*------------------------------------
+  Social color
+------------------------------------*/
+@each $color, $value in $socialcolors {
+	.text-#{$color} {
+		color: $value !important;
+	}
+	.hover-#{$color}-text {
+		&:hover {
+			i {
+                color: $value !important;
+			}
+		}
+	}
+	.hover-#{$color} {
+		a {
+			&:hover {
+				i {
+                    color: $value !important;
+				}
+			}
+		}
+	}
+	.bg-#{$color}, .btn-#{$color} {
+		background-color: $value !important;
+		color: $white;
+	}
+}

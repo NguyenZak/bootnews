@@ -1,0 +1,14 @@
+/*------------------------------------
+	Weather
+------------------------------------*/
+.weather-icon {
+	width: $weather-icon-width;
+	top: 0;
+	position: absolute;
+}
+.weather-span {
+	margin-left: $weather-span-left;
+}
+.weather-small {
+	width: $weather-small-width;
+}

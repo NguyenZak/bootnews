@@ -1,0 +1,144 @@
+/*------------------------------------
+	Space
+------------------------------------*/
+/*top*/
+.t-0 {
+	top: 0;
+}
+.t-1 {
+	top: $space-one;
+}
+.t-2 {
+	top: $space-two;
+}
+.t-3 {
+	top: $space-three;
+}
+.t-4 {
+	top: $space-four;
+}
+/*bottom*/
+.b-0 {
+	bottom: 0;
+}
+.b-1 {
+	bottom: $space-one;
+}
+.b-2 {
+	bottom: $space-two;
+}
+.b-3 {
+	bottom: $space-three;
+}
+.b-4 {
+	bottom: $space-four;
+}
+/*right*/
+.r-0 {
+	right: 0;
+}
+.r-1 {
+	right: $space-one;
+}
+.r-2 {
+	right: $space-two;
+}
+.r-3 {
+	right: $space-three;
+}
+.r-4 {
+	right: $space-four;
+}
+/*left*/
+.l-0 {
+	left: 0rem;
+}
+.l-1 {
+	left: $space-one;
+}
+.l-2 {
+	left: $space-two;
+}
+.l-3 {
+	left: $space-three;
+}
+.l-4 {
+	left: $space-four;
+}
+.no-margin {
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+/*------------------------------------
+  Space Percent
+------------------------------------*/
+/*top*/
+.top-1 {
+	top: $space-percent-one;
+}
+.top-2 {
+	top: $space-percent-two;
+}
+.top-3 {
+	top: $space-percent-three;
+}
+.top-4 {
+	top: $space-percent-four;
+}
+.top-5 {
+	top: $space-percent-five;
+}
+/*bottom*/
+.bottom-1 {
+	bottom: $space-percent-one;
+}
+.bottom-2 {
+	bottom: $space-percent-two;
+}
+.bottom-3 {
+	bottom: $space-percent-three;
+}
+.bottom-4 {
+	bottom: $space-percent-four;
+}
+.bottom-5 {
+	bottom: $space-percent-five;
+}
+/*right*/
+.right-1 {
+	right: $space-percent-one;
+}
+.right-2 {
+	right: $space-percent-two;
+}
+.right-3 {
+	right: $space-percent-three;
+}
+.right-4 {
+	right: $space-percent-four;
+}
+.right-5 {
+	right: $space-percent-five;
+}
+/*left*/
+.left-1 {
+	left: $space-percent-one;
+}
+.left-2 {
+	left: $space-percent-two;
+}
+.left-3 {
+	left: $space-percent-three;
+}
+.left-4 {
+	left: $space-percent-four;
+}
+.left-5 {
+	left: $space-percent-five;
+}
+
+// height
+.h-0 {
+	height:0
+}

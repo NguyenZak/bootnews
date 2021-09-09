@@ -1,0 +1,54 @@
+/*------------------------------------
+	Typograpy
+------------------------------------*/
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		/*extra padding*/
+		.p#{$infix}-05 {
+			padding: $padding-05 !important;
+		}
+		.px#{$infix}-05, .ps#{$infix}-05 {
+			padding-left: $padding-05 !important;
+		}
+		.px#{$infix}-05, .pe#{$infix}-05 {
+			padding-right: $padding-05 !important;
+		}
+		.py#{$infix}-05, .pt#{$infix}-05 {
+			padding-top: $padding-05 !important;
+		}
+		.py#{$infix}-05, .pb#{$infix}-05 {
+			padding-bottom: $padding-05 !important;
+		}
+	}
+}
+
+// margin module
+.m-module {
+	margin: $margin-module;
+}
+.mt-module {
+	margin-top: $margin-module;
+}
+.mr-module {
+	margin-right: $margin-module;
+}
+.mb-module {
+	margin-bottom: $margin-module;
+}
+.ml-module {
+	margin-left: $margin-module;
+}
+// margin minus
+.mt-minus {
+    margin-top: $margin-minus;
+}
+.mt-minus-sm {
+    margin-top: $margin-minus-sm;
+}
+.mt-minus-md {
+    margin-top: $margin-minus-md;
+}
+.mt-minus-lg {
+    margin-top: $margin-minus-lg;
+}

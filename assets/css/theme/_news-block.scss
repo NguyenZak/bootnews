@@ -1,0 +1,72 @@
+/*------------------------------------
+  News Block
+------------------------------------*/
+.block-area, .widget {
+	position: relative;
+	clear: both;
+	margin-bottom: $block-margin-bottom;
+}
+.block-area {
+	.btn {
+		margin-bottom: $block-button-bottom;
+	}
+}
+.sticky {
+	margin-bottom: $block-margin-bottom;
+}
+.first-pt-0 {
+	article:first-child {
+		padding-top: 0 !important;
+	}
+}
+@each $color, $value in $theme-colors {
+	.block-#{$color} {
+		a{
+			color: $value;
+			&:hover {
+				color: $value !important;
+			}
+			&.badge{
+				color:$white !important;
+				background-color: $value;
+			}
+			&.btn {
+				&:hover {
+					color:$white !important;
+				}
+			}
+		}
+		h1 , h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+			> a {
+				color: $color_fonts;
+				&:hover {
+					color: $value !important;
+				}
+			}
+		}
+		.hover-a{
+			&:hover {
+				h1 , h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+					> a {
+						color: $value !important;
+						&.text-white {
+							color: $white !important;
+						}
+					}
+				}
+			}
+		}
+		.sub-card {
+			ul {
+				li {
+					a {
+					color: $color_fonts !important;
+					&:hover {
+							color: $value !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+/*------------------------------------
+	Five Grid Column
+------------------------------------*/
+.col-24,
+.col-sm-24,
+.col-md-24,
+.col-lg-24,
+.col-xl-24 {
+    position: relative;
+    width: 100%;
+    min-height: $min-height-grid;
+    padding-right: $padding-right-grid;
+    padding-left: $padding-left-grid;
+}
+.col-24 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.offset-24 {
+    margin-left: 20%;
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		.col#{$infix}-24 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+        .offset#{$infix}-24 {
+            margin-left: 20%;
+        }
+	}
+}

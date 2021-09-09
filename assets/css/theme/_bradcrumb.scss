@@ -1,0 +1,26 @@
+/*------------------------------------
+   Breadcrumb
+------------------------------------*/
+.u-breadcrumb {
+	color:$breadcrumb-active-color;
+	background: transparent;
+	font-size: 90%;
+	a{
+		color:$breadcrumb-active-color;
+	}
+	.breadcrumb-item {
+		font-family: $font_1, $font_2;
+		a{
+			color: $breadcrumb-active-color;
+		}
+	}
+	.breadcrumb-item::before {
+		display: inline-block;
+		padding-right: $breadcrumb-padding-right-1;
+		color: $breadcrumb-active-color;
+		content: "»";
+	}
+	.breadcrumb-item:first-child::before {
+		display: none;
+	}
+}

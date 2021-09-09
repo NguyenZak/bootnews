@@ -1,0 +1,27 @@
+/*------------------------------------
+	Box Shadow
+------------------------------------*/
+.shadow-lrb-lg {
+	box-shadow: 0 .4rem 2.2rem 0 rgba(27, 30, 36, 0.1);
+}
+.shadow-lrb-sm {
+	box-shadow: 0 .1rem .6rem 0 rgba(27, 30, 36, 0.1)
+}
+.shadow-b {
+	box-shadow: 0 .5rem 1rem -.5rem rgba(0, 0, 0, 0.1);
+}
+.shadow-b-sm {
+	box-shadow: 0 .5rem .5rem -.5rem rgba(0, 0, 0, 0.1);
+}
+.shadow-t {
+	box-shadow: 0 -.5rem 1rem -.5rem rgba(0, 0, 0, 0.1);
+}
+.shadow-r {
+	box-shadow: .5rem 0 1rem -.5rem rgba(0, 0, 0, 0.1);
+}
+.shadow-l {
+	box-shadow: -.5rem 0 1rem -.5rem rgba(0, 0, 0, 0.1);
+}
+.no-shadow {
+	box-shadow: none !important;
+}

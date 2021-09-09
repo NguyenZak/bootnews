@@ -1,0 +1,74 @@
+/*------------------------------------
+	Background images
+------------------------------------*/
+//@extend-elements
+//.boxed .bg-image, .framed .bg-image
+%extend_bg-image-1 {
+	top: 0;
+	left: 0;
+	z-index: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+//.bg-cover .bg-image, .bg-cover2 .bg-image, .bg-cover3 .bg-image
+%extend_bg-image-2 {
+	background-color: $bg-cover-color;
+	position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+// .bg-repeat .bg-image, .bg-repeat2 .bg-image, .bg-repeat3 .bg-image
+%extend_bg-image-3 {
+	background-color: $white;
+	position: fixed;
+	background-repeat: repeat;
+  }
+.boxed .bg-image, .framed .bg-image {
+	@extend %extend_bg-image-1;
+}
+// background cover
+.bg-cover, .bg-cover2, .bg-cover3{
+	.bg-image{
+		@extend %extend_bg-image-2;
+	}
+}
+.bg-cover {
+	.bg-image {
+		background-image: $bg-cover-1;
+	}
+}
+.bg-cover2 {
+	.bg-image {
+		background-image: $bg-cover-2;
+	}
+}
+.bg-cover3 {
+	.bg-image {
+		background-image: $bg-cover-3;
+	}
+}
+// background repeat
+.bg-repeat, .bg-repeat2, .bg-repeat3 {
+	.bg-image {
+		@extend %extend_bg-image-3;
+	}
+}
+.bg-repeat {
+	.bg-image {
+		background-image: $bg-repeat-1;
+	}
+}
+.bg-repeat2 {
+	.bg-image {
+		background-image: $bg-repeat-2;
+	}
+}
+.bg-repeat3 {
+	.bg-image {
+		background-image: $bg-repeat-3;
+	}
+}
+.bg-pattern-repeat{
+	background: $light $bg-pattern-repeat repeat;
+}

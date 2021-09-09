@@ -1,0 +1,87 @@
+/*------------------------------------
+	Hover
+------------------------------------*/
+.hover-show {
+	opacity: 0;
+}
+.hover-a {
+	&:hover {
+		a {
+			&.h1, &.h2, &.h3, &.h4, &.h5, &.h6 {
+				color: $primary;
+			}
+		}
+		h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, .h1 > a, .h2 > a, .h3 > a, .h4 > a, .h5 > a, .h6 > a, p > a {
+			color: $primary;
+		}
+		.bg-full-shadow {
+			opacity: 0.5;
+		}
+		.hover-block, .hover-show, .caret-up img, .caret-down img, .caret-left img, .caret-right img, img.card-avatar, .fa-stack-sea {
+			opacity: $opacity-1;
+		}
+		.hover-hide {
+			opacity: 0;
+		}
+	}
+	li:hover a {
+		color: $primary;
+		&.h6 {
+			color: $primary;
+		}
+	}
+}
+.hover-zoomin {
+	img {
+		opacity: $opacity-1;
+		transition: opacity 1s,transform 1s;
+	}
+	&:hover img {
+		opacity: .9;
+		transform: scale3d(1.1,1.1,1);
+	}
+}
+.fa-stack-sea {
+	opacity: .7;
+	background-color: $white;
+	border: $icon-stack-border;
+	border-radius: $icon-stack-border-radius;
+	display: inline-block;
+	height: $icon-stack-height;
+	line-height: $icon-stack-line-height;
+	position: relative;
+	vertical-align: middle;
+	width: $icon-stack-width;
+	&.stack-2x {
+		padding: $icon-stack-2-padding;
+		height: $icon-stack-2-height;
+		width: $icon-stack-2-width;
+	}
+}
+.hover-block {
+	opacity: $opacity-0;
+}
+a {
+	&:hover{
+		color: $primary;
+	}
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	&>a {
+		&:hover{
+			color: $primary;
+		}
+	}
+}
+.hover-link {
+	li {
+		 a{
+			&:hover {
+				background-color: $wild_sand;
+			}
+		}
+	}
+}
+.cursor-pointer{
+	cursor: pointer;
+}

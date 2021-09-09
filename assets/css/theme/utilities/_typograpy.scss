@@ -1,0 +1,50 @@
+/*------------------------------------
+	Typograpy
+------------------------------------*/
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		.h1#{$infix} {
+		  font-size: $h1-font-size;
+		}
+		.h2#{$infix} {
+		  font-size: $h2-font-size;
+		}
+		.h3#{$infix} {
+		  font-size: $h3-font-size;
+		}
+		.h4#{$infix} {
+		  font-size: $h4-font-size;
+		}
+		.h5#{$infix} {
+		  font-size: $h5-font-size;
+		}
+		.h6#{$infix} {
+		  font-size: $h6-font-size;
+		}
+		.lead#{$infix} {
+			font-size: $lead-font-size;
+			font-weight: $lead-font-weight;
+		}
+		.display-1#{$infix} {
+			font-size: $display1-size;
+			font-weight: $display-weight;
+			line-height: $display-line-height;
+		}
+		.display-2#{$infix} {
+			font-size: $display2-size;
+			font-weight: $display-weight;
+			line-height: $display-line-height;
+		}
+		.display-3#{$infix} {
+			font-size: $display3-size;
+			font-weight: $display-weight;
+			line-height: $display-line-height;
+		}
+		.display-4#{$infix} {
+			font-size: $display4-size;
+			font-weight: $display-weight;
+			line-height: $display-line-height;
+		}
+	}
+}

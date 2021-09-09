@@ -1,0 +1,29 @@
+/*------------------------------------
+  Ratings
+------------------------------------*/
+%flex-display {
+    display: flex;
+}
+.star-rating {
+    @extend %flex-display;
+    font-size: $ratings-font-size;
+    margin-top: $ratings-margin-top;
+    margin-bottom: $ratings-margin-bottom;
+}
+.back-stars {
+    @extend %flex-display;
+    color: $dark;
+    position: relative;
+}
+.back-stars-light{
+    @extend %flex-display;
+    color: $light;
+    position: relative;
+}
+.front-stars {
+    @extend %flex-display;
+    color: $warning;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}

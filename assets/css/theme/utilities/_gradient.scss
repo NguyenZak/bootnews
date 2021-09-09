@@ -1,0 +1,45 @@
+/*------------------------------------
+	Gradient images efect
+------------------------------------*/
+.gradient {
+	&>a:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: .6;
+		display: block;
+	}
+}
+.gradient-1 {
+	&>a:after {
+		background: linear-gradient(45deg,#211d6b 0,#ce381c 100%);
+	}
+}
+.gradient-2 {
+	&>a:after {
+		background: linear-gradient(45deg,#18256f 0,#1fe6e4 100%);
+	}
+}
+.gradient-3 {
+	&>a:after {
+		background: linear-gradient(45deg,#187957 0,#52e253 100%);
+	}
+}
+.gradient-4 {
+	&>a:after {
+		background: linear-gradient(45deg,#9a8700 0,#dbff16 100%);
+	}
+}
+.gradient-5 {
+	&>a:after {
+		background: linear-gradient(45deg,#971d7d 0,#f93c3c 100%);
+	}
+}
+.gradient-6 {
+	&>a:after {
+		background: linear-gradient(45deg,#97931d 0,#0889bb 100%);
+	}
+}

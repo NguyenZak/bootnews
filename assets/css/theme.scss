@@ -1,0 +1,24 @@
+// Bootstrap functions
+@import '../vendor/bootstrap/scss/functions';
+
+// Custom variable
+@import 'custom/custom-variables';
+
+// ========================
+// Default variables
+// ========================
+@import 'variables';
+
+// Bootstrap core
+@import '../vendor/bootstrap/scss/bootstrap';
+
+/*----------------------------------------------------------------------
+    * BootNews - Magazine and Blog bootstrap template
+    * Copyright 2021 Bootstrap.News
+    * Licensed under (https://bootstrap.news/license/)
+------------------------------------------------------------------------*/
+
+@import 'theme/bootnews';
+
+// Custom start
+@import 'custom/custom';

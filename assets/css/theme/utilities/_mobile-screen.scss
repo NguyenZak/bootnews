@@ -1,0 +1,14 @@
+/*------------------------------------
+	Mobile screen
+------------------------------------*/
+@include media-breakpoint-down(md) {
+	.container {
+		max-width: 100%;
+	}
+}
+@include media-breakpoint-down(sm) {
+	// width 100% in mobile
+	.w-100-mobile{
+		width: 100% !important;
+	}
+}

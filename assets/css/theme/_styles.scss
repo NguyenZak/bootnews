@@ -1,0 +1,79 @@
+/*------------------------------------
+	General
+------------------------------------*/
+* {
+	box-sizing: border-box;
+	outline: none;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+	font-family: $font_1, $font_2;
+}
+.wrapper{
+	font-size: $wrapper-font-size;
+}
+main {
+	position: relative;
+}
+a {
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+}
+h1 , h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	line-height: $title-line-height;
+	font-weight: $font-weight-500;
+}
+.heading-letter-spacing {
+	letter-spacing: 1px;
+}
+figure {
+	margin-bottom: 0;
+}
+object {
+	margin-bottom: -0.3125rem;
+}
+.register-mobile {
+	text-align: center;
+	li {
+		font-weight: $font-weight-bold;
+		display: inline;
+	}
+}
+.cursors{
+	cursor: pointer;
+}
+pre{
+	overflow: auto;
+	background-color: $pre-background;
+	padding: $pre-padding;
+	border: none;
+	border-radius: 0;
+	margin-top: $pre-margin-top;
+}
+ol ul {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.tags-list, .comment-list {
+    padding-left: 0;
+}
+:focus {
+	outline: 0;
+}
+a:focus {
+	outline: 0;
+}
+button:focus {
+	outline: 0;
+}
+.hr-after {
+	&.mx-auto {
+		opacity: 1;
+		height: 2px;
+	} 
+}

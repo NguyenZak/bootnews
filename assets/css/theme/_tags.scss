@@ -1,0 +1,69 @@
+/*------------------------------------
+	Tags
+------------------------------------*/
+.post-content {
+	.tags-list { 
+		li {
+			padding: $tags-list-padding;
+			display: inline-block;
+			border: $tags-list-border;
+			margin-bottom: $tags-list-bottom;
+			margin-left: inherit;
+			line-height: inherit;
+			&:hover {
+				background-color: $tags-list-bg-hover;
+				a {
+					color: $tags-list-color-hover;
+				}
+			}
+			&:first-child {
+				padding-left: 0;
+				font-family: $font_1, $font_2;
+				background-color: transparent;
+				border-color: transparent !important;
+				font-weight: $font-weight-500;
+				span {
+					color: $color_fonts;
+				}
+			}
+		}
+	}
+}
+// tags in post
+.tags-links {
+	a {
+		padding: $tags-list-padding;
+		display: inline-block;
+		border: $tags-list-border;
+		margin-right: $tags-list-right;
+		margin-bottom: $tags-list-bottom;
+		margin-left: inherit;
+		line-height: inherit;
+		&:hover {
+			background-color: $tags-list-bg-hover;
+			color: $tags-list-color-hover;
+		}
+	}
+}
+// tags in category
+.tags-list-cat {
+	li {
+		padding: $tags-list-padding;
+		display: inline-block;
+		border: $tags-list-border;
+		margin-bottom: $tags-list-bottom;
+		&:hover {
+			background-color: $tags-list-bg-hover;
+			a {
+				color: $tags-list-color-hover;
+			}
+		}
+	}
+}
+.tagcloud {
+	a {
+		&:before {
+			content: "#";
+		}
+	}
+}

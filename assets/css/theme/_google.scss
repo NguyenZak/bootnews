@@ -1,0 +1,14 @@
+/*------------------------------------
+	Google Fonts
+------------------------------------*/
+.font-family {
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $font_1, $post-font-style, $font_2;
+	}
+	.navbar-nav, .breaking-box, .u-breadcrumb, .title-comments .authors, .prev-next-post a {
+		font-family: $font_1, $post-font-style, $font_2;
+	}
+}
+.post-content {
+	font-family: $post-font-style, $font_2;
+}

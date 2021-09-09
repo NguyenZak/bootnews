@@ -1,0 +1,125 @@
+/*------------------------------------
+ Border Child
+------------------------------------*/
+.border-top-first-0 {
+	> li, > article {
+		border-top: $border-child;
+		&:first-child {
+			border-top: none;
+		}
+	}
+	> a {
+		border-top: $border-child;
+		&:first-child {
+			border-top: none;
+		}
+	}
+}
+.border-left-first-0 {
+	> li, > article {
+		border-left: $border-child;
+		&:first-child {
+			border-left: none;
+		}
+	}
+	> a {
+		border-left: $border-child;
+		&:first-child {
+			border-left: none;
+		}
+	}
+}
+.border-right-last-0 {
+	> li, > article {
+		border-right: $border-child;
+		&:last-child {
+			border-right: none;
+		}
+	}
+	> a {
+		border-right: $border-child;
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+.border-bottom-last-0 {
+	> li, > article {
+		border-bottom: $border-child;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	> a {
+		border-bottom: $border-child;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+.hr-after {
+	background: $color_fonts;
+    height: 1px;
+    width: 5rem;
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		.border-top-first#{$infix}-0 {
+			> li, > article {
+				border-top: $border-child;
+				&:first-child {
+					border-top: none;
+				}
+			}
+			> a {
+				border-top: $border-child;
+				&:first-child {
+					border-top: none;
+				}
+			}
+		}
+		.border-left-first#{$infix}-0 {
+			> li, > article {
+				border-left: $border-child;
+				&:first-child {
+					border-left: none;
+				}
+			}
+			> a {
+				border-left: $border-child;
+				&:first-child {
+					border-left: none;
+				}
+			}
+		}
+		.border-right-last#{$infix}-0 {
+			> li, > article {
+				border-right: $border-child;
+				&:last-child {
+					border-right: none;
+				}
+			}
+			> a {
+				border-right: $border-child;
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+		.border-bottom-last#{$infix}-0 {
+			> li, > article {
+				border-bottom: $border-child;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+			> a {
+				border-bottom: $border-child;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

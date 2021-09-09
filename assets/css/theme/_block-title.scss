@@ -1,0 +1,325 @@
+/*------------------------------------
+	Block title
+------------------------------------*/
+//@extend-elements
+//.block-title-1 h1, .block-title-1 h2, .block-title-1 h3, .block-title-1 h4, .block-title-1 h5, .block-title-1 h6
+%extend_1 {
+	padding-left: $blocktitle-padding-left;
+	padding-right: $blocktitle-padding-right;
+	padding-top: $blocktitle-padding-top;
+	padding-bottom: $blocktitle-padding-bottom;
+}
+//.center-backline:before, .center-backline-lg:before
+%extend_2 {
+	content: "";
+	position: absolute;
+	height: $blocktitle-border-default;
+	top: $blocktitle-space-top;
+	background-color: $primary;
+	left: 0;
+	right: 0;
+}
+//.center-backline span, .center-backline-lg span
+%extend_3 {
+	max-width: $blocktitle-max-width;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+.block-title-1 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	padding-bottom: $blocktitle-padding-bottom2;
+	border-bottom: $blocktitle-border-color $blocktitle-border-default solid;
+	h1, h2, h3, h4, h5, h6 {
+		@extend %extend_1;
+		display: inline;
+	}
+}
+.block-title-2 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	padding-bottom: $blocktitle-padding-bottom2;
+	border-bottom: $blocktitle-border-color $blocktitle-border-default solid;
+	h1, h2, h3, h4, h5, h6 {
+		display: inline;
+	}
+}
+.block-title-3 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	padding-bottom: $blocktitle-padding-bottom2;
+	border-bottom: $blocktitle-border-color $blocktitle-border-default solid;
+	h1, h2, h3, h4, h5, h6 {
+		display: inline;
+	}
+}
+.block-title-4 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	padding-bottom: $blocktitle-padding-bottom2;
+	border-bottom: $blocktitle-border-color $blocktitle-border-default solid;
+	h1, h2, h3, h4, h5, h6 {
+		display: inline;
+	}
+}
+.block-title-5 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	padding-bottom: $blocktitle-padding-bottom3;
+	border-bottom: $blocktitle-border-color $blocktitle-border-default solid;
+	h1, h2, h3, h4, h5, h6 {
+		display: inline;
+		span {
+			padding-bottom: $blocktitle-padding-bottom5;
+			border-bottom: $blocktitle-border-color $blocktitle-border-default solid;
+		}
+	}
+}
+.block-title-6 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	h1, h2, h3, h4, h5, h6 {
+		border-bottom: $blocktitle-border-color $blocktitle-border-default solid;
+		span {
+			@extend %extend_1;
+			margin-bottom: -2px;
+			display: inline-block;
+			position: relative;
+		}
+	}
+}
+.block-title-7 {
+	position: relative;
+	margin-bottom: 0;
+}
+.block-title-8 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+		padding-top: $blocktitle-padding-top;
+		padding-bottom: $blocktitle-padding-bottom;
+		position: relative;
+		display: block;
+	}
+}
+.block-title-9 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+		padding-left: 1rem;
+		border-left: $blocktitle-border-color 5px solid;
+		padding-top: $blocktitle-padding-top;
+		padding-bottom: $blocktitle-padding-bottom;
+		display: block;
+		position: relative;
+	}
+}
+.block-title-10 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+		padding-top: $blocktitle-padding-top;
+		padding-bottom: $blocktitle-padding-bottom;
+		display: block;
+		position: relative;
+	}
+}
+.block-title-11 {
+	position: relative;
+	margin-bottom: 0;
+	h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+		padding-left: 0;
+	}
+}
+.block-title-12 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	padding-bottom: $blocktitle-padding-bottom2;
+	padding-top: $blocktitle-padding-top2;
+	h1, h2, h3, h4, h5, h6 {
+		float: left;
+		margin-right: $blocktitle-margin-right;
+	}
+}
+.block-title-13 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	padding-bottom: $blocktitle-padding-bottom2;
+	padding-top: $blocktitle-padding-top2;
+	h1, h2, h3, h4, h5, h6 {
+		float: left;
+		margin-right: $blocktitle-margin-right;
+	}
+}
+.block-title-14 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+		@extend %extend_1;
+		display: inline-block;
+		position: relative;
+	}
+}
+.block-title-15 {
+	position: relative;
+	margin-bottom: $blocktitle-margin-bottom;
+	h1, h2, h3, h4, h5, h6 {
+		border-bottom: $blocktitle-border-color $blocktitle-border-default solid;
+	}
+}
+.center-backline {
+	&:before {
+		@extend %extend_2;
+		margin-top: -.5px;
+		margin-bottom: 0;
+	}
+	span {
+		@extend %extend_1;
+		@extend %extend_3;
+	}
+}
+.center-backline-lg {
+	&:before {
+		@extend %extend_2;
+		margin-top: -0.5rem;
+	}
+	span {
+		@extend %extend_1;
+		@extend %extend_3;
+	}
+}
+@media(max-width: 767.98px) {
+	.center-backline:before {
+		left: $blocktitle-space-left-mobile;
+		right: $blocktitle-space-right-mobile;
+	}
+}
+.title-box-stripe {
+	margin-top: -0.4rem;
+}
+.stripe-line {
+	background: $url_0;
+	height: $blocktitle-arrow-height;
+	overflow: hidden;
+	margin-top: 0;
+}
+.title-box-dot {
+	margin-top: -0.4rem;
+}
+.dot-line {
+	background: $url_1;
+	height: $blocktitle-arrow-height;
+	overflow: hidden;
+	margin-top: 0;
+}
+.title-arrow:before {
+	content: '';
+	width: 2.5rem;
+	height: $blocktitle-border-default;
+	position: absolute;
+	top: 2rem;
+	background: $primary;
+}
+.u-backline:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: $blocktitle-border-default;
+	background-color: $primary;
+	margin-top: 1.5rem;
+}
+.box-title:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+	bottom: -.5rem;
+	left: 50%;
+	border-top-color: $primary;
+	border-width: 0.5rem;
+	border-bottom: 0;
+	margin-left: -10px;
+}
+.box-title {
+	@each $color, $value in $theme-colors {
+		&.border-#{$color} {
+            &:before {
+				border-top-color: $value;
+			}
+		}
+	}
+}
+.six-block-title span {
+	margin-bottom: -2px;
+	display: inline-block;
+	position: relative;
+	@extend %extend_1;
+}
+// navigate block link
+.nav-block-link, .nav-block-link1, .nav-block-link2, .nav-block-link3, .nav-block-link4, .nav-block-link5, .nav-block-link6, .nav-block-link7, .nav-block-more {
+	position: absolute;
+	top: 0;
+	right: 3.2rem;
+	margin: auto 0;
+	z-index: 2;
+	line-height: 30px;
+	text-align: right;
+	border: 0;
+	li{
+		display: inline-block;
+		margin-right: 1.5rem;
+		a{
+			color: $color_fonts;
+			&:hover {
+				color: $primary;
+			}
+			&.nav-tabs{
+				.nav-item{
+					margin-bottom: 3px;
+				}
+			}
+			&.nav-link{
+				display: inline;
+				border: 0;
+				color: $color_fonts;
+				background-color: transparent;
+				padding: 0.5rem 0rem;
+				&.active, &:hover {
+					color: $primary;
+					background-color: transparent;
+				}
+			}
+		}
+		&.active {
+			a{
+				color: $primary;
+			}
+		}
+	}
+}
+.nav-block-more {
+	li{
+		margin-right: 1rem;
+	}
+}
+.nav-block-more{
+	right: 0;
+}
+@include media-breakpoint-down(sm) {
+	.nav-block-link, .nav-block-link1, .nav-block-link2, .nav-block-link3, .nav-block-link4, .nav-block-link5, .nav-block-link6, .nav-block-link7  {
+		width: 50%;
+	}
+}
+@include media-breakpoint-down(md) {
+	.nav-block-link, .nav-block-link1, .nav-block-link2, .nav-block-link3, .nav-block-link4, .nav-block-link5, .nav-block-link6, .nav-block-link7  {
+		overflow: hidden;
+		width: 60%;
+		height: 2rem;
+	}
+	.nav-block-more{
+		width: inherit;
+	}
+}

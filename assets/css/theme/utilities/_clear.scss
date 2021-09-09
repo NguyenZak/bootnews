@@ -1,0 +1,32 @@
+// gap 
+.gap-0, .gap-05, .gap-075, .gap-1, .gap-15, .gap-2, .gap-25, .gap-3, .gap-4 {
+	width: 100%;
+	clear: both;
+}
+.gap-0 {
+	height: .1px;
+}
+.gap-05 {
+	height: $gap-05;
+}
+.gap-075 {
+	height: $gap-075;
+}
+.gap-1 {
+	height: $gap-1;
+}
+.gap-15 {
+	height: $gap-15;
+}
+.gap-2 {
+	height: $gap-2;
+}
+.gap-25 {
+	height: $gap-25;
+}
+.gap-3 {
+	height: $gap-3;
+}
+.gap-4 {
+	height: $gap-4;
+}

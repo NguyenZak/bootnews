@@ -1,0 +1,38 @@
+/*------------------------------------
+	Breaking news
+------------------------------------*/
+.navigation-box {
+	top: $navigation-box-top;
+	right: $navigation-box-right;
+	width: $navigation-box-width;
+	position: absolute;
+}
+.aribudin{
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	text-overflow: ellipsis;
+}
+.page-link.disabled {
+	cursor: not-allowed;
+}
+@include media-breakpoint-down(sm) {
+	.breaking-box {
+		.carousel-item {
+			padding-top: $breaking-box-padding-top;
+			padding-bottom: $breaking-box-padding-bottom;
+		}
+	}
+}
+@include media-breakpoint-up(md) {
+	.breaking-box {
+		.carousel-item {
+			line-height: $breaking-box-line-height;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+/*------------------------------------
+	Back to top
+------------------------------------*/
+.back-top {
+	visibility: hidden;
+	opacity: $opacity-0;
+	transition: $backtotop-transition-1;
+	&.backtop-is-visible {
+		transition: $backtotop-transition-2;
+		z-index: 99;
+		visibility: visible;
+		opacity: $opacity-1;
+	}
+	&.backtop-fade-out {
+		transition: $backtotop-transition-2;
+		opacity: $opacity-05;
+	}
+}
+.no-touch {
+	.back-top {
+		&:hover {
+			transition: $backtotop-transition-2;
+			background-color: $backtotop-no-touch;
+			opacity: $opacity-1;
+		}
+	}
+}

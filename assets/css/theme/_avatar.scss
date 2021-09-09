@@ -1,0 +1,36 @@
+/*------------------------------------
+  Avatar
+------------------------------------*/
+.avatar-user {
+	margin: $avatar-margin;
+	text-align: center;
+}
+.card-avatar {
+	border: $card-avatar-border;
+}
+.avatar-rounded {
+	border-radius: $avatar-rounder-radius;
+}
+.avatar-xs {
+	width: $avatar-xs-width;
+	height: $avatar-xs-height;
+}
+.avatar-sm {
+	width: $avatar-sm-width;
+	height: $avatar-sm-height;
+}
+.avatar-md {
+	width: $avatar-md-width;
+	height: $avatar-md-height;
+}
+.avatar-lg {
+	width: $avatar-lg-width;
+	height: $avatar-lg-height;
+}
+.avatar-xl {
+	width: $avatar-xl-width;
+	height: $avatar-xl-height;
+}
+.nav-avatar {
+	padding: $nav-avatar-padding;
+}

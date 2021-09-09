@@ -1,0 +1,74 @@
+/*------------------------------------
+  Widget
+------------------------------------*/
+.widget-title {
+	text-transform: uppercase;
+	margin-bottom: $widget-title-margin-bottom;
+	padding: $widget-title-padding;
+}
+.widget {
+    ul, ol {
+        padding-left: 0;
+        list-style: none;
+        li {
+            margin-bottom: $social2-li-a-bottom;
+            a {
+                color: $color_fonts;
+                &.url {
+                    color: $color_a;
+                    font-style: italic;
+                }
+                &:hover {
+                    color: $color_a;
+                }
+                &.active {
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.no-mb {
+            li {
+                margin-bottom: -1px;
+            }
+        }
+        &.custom-category {
+            li{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// widget in footer
+.footer-dark {
+    .widget {
+        ul, ol {
+            li {
+                a {
+                    color: $color_dark_footer;
+                    &.url {
+                        color: $color_a;
+                        font-style: italic;
+                    }
+                    &:hover {
+                        color: $color_a;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// tags cloud
+.tagcloud {
+    li {
+        display: inline;
+    }
+}
+
+// instagram horizontal
+.instagram-horizontal {
+    overflow-x: hidden;
+}

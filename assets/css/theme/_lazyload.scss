@@ -1,0 +1,55 @@
+/*------------------------------------
+ Lazyload images
+------------------------------------*/
+.image-wrapper {
+	/*background color if image is loading slow*/
+	background-color: $img-wrapper-bg;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	background: $img-wrapper-gradient;
+	background-size: $img-wrapper-size !important;
+	background-position: center center !important;
+	-webkit-animation: AnimationSea $img-wrapper-animation infinite linear forwards;
+	-moz-animation: AnimationSea $img-wrapper-animation infinite linear forwards;
+	-o-animation: AnimationSea $img-wrapper-animation infinite linear forwards;
+	animation: AnimationSea $img-wrapper-animation infinite linear forwards;
+}
+@-webkit-keyframes AnimationSea {
+	from{background-position:100% 0}to{background-position:20% 0}
+}
+@-moz-keyframes AnimationSea {
+	from{background-position:100% 0}to{background-position:20% 0}
+}
+@-o-keyframes AnimationSea {
+	from{background-position:100% 0}to{background-position:20% 0}
+}
+@keyframes AnimationSea {
+	from{background-position:100% 0}to{background-position:20% 0}
+}
+.image-single-wrapper {
+	width: 100%;
+	min-height: 18rem;
+}
+.lazy {
+	width: 100%;
+	transition:500ms ease-in-out;
+	opacity: $opacity-0;
+}
+.lazy.loaded {
+   opacity: $opacity-1;
+}
+.hover-a:hover {
+	.image-wrapper {
+		opacity: $opacity-09;
+	}
+}
+.ajax-tabs{
+	min-height: 20rem;
+}
+.loaders {
+    opacity: .7;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 100px;
+}

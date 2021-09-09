@@ -1,0 +1,95 @@
+/*------------------------------------
+	Comment
+------------------------------------*/
+.comment-list {
+	li {
+		list-style: none;
+		margin-top: $comment-list-top;
+		.user-comment {
+			border-bottom: $comment-article-b-bottom;
+			padding-bottom: $comment-article-p-bottom;
+			.comment-author {
+				.avatar {
+					float: left;
+					margin-right: 1rem;
+				}
+			}
+			.title-comments {
+				.authors {
+					font-weight: $font-weight-bold;
+				}
+			}
+			.comment-content {
+				p {
+					margin-bottom: $comment-p;
+				}
+			}
+		}
+		.sub-comment {
+			margin-left: $subcomment-margin-left;
+			.sub-comment {
+				margin-left: $sub-subcomment-mobile-margin-left;
+			}
+		}
+	}
+}
+.comment-awaiting-moderation {
+    background: $yellow;
+}
+@include media-breakpoint-up(sm) {
+	.comment-list {
+		li{
+			.sub-comment {
+				.sub-comment {
+					margin-left: $sub-subcomment-margin-left;
+				}
+			}
+		}
+		.title-comments {
+			.dates {
+				float: right;
+			}
+		}
+	}
+}
+// widget comments
+.recentcomments{
+	a {
+		font-style: italic;
+		font-family: $font_1, Helvetica, $font_2 !important;
+		font-size: 0.875rem;
+	}
+	.comment-author-link {
+		font-style: italic;
+		font-family: $font_1, Helvetica, $font_2 !important;
+		font-size: 0.875rem;
+		a {
+			&.url{
+				color: $color_a !important;
+			}
+		}
+	}
+}
+.icon-comments {
+	&:after, &-dark:after {
+        display:inline-block;
+		width: .75rem;
+		height: .75rem;
+		margin-right: $social-a-before-margin;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: .75rem;
+		margin-bottom: -.2rem;
+		content: "";
+	}
+	&:after {
+		background-image: escape-svg($icon-comments);
+		opacity: .9;
+	}
+	&-dark {
+		&:after {
+			background-image: escape-svg($icon-comments-dark);
+			opacity: .7;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+/*------------------------------------
+  Sidebar
+------------------------------------*/
+.start-sidebar {
+	padding-right: $sidebar-padding-right;
+}
+.end-sidebar {
+	padding-left: $sidebar-padding-left;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		.start-sidebar#{$infix} {
+			padding-right: $sidebar-padding-right;
+			&::after {
+				margin-top: 5rem;
+				position: relative;
+				content: "";
+				padding: 2rem;
+				display: block;
+			}
+		}
+		.end-sidebar#{$infix} {
+			padding-left: $sidebar-padding-left;
+			&::after {
+				margin-top: 5rem;
+				position: relative;
+				content: "";
+				padding: 2rem;
+				display: block;
+			}
+		}
+	}
+}
+
+// Sidelink color
+.side-link, .sidebar-link {
+	li {
+		a {
+			color: $color_fonts;
+			&.caret-collapse{
+				color: $primary;
+			}
+			&.caret-collapse.collapsed{
+				color: $color_fonts;
+				&:hover{
+					color: $primary;
+				}
+			}
+			&:hover, &.active{
+				background-color: transparent;
+				color: $primary;
+			}
+		}
+		ul {
+			li{
+				a {
+					color: $color_fonts;
+					&:hover{
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+}
+.sidebar-link {
+	li {
+		a {
+			display: block;
+			font-size: $sidebar-link-font-size;
+			padding: $sidebar-link-padding;
+		}
+	}
+}

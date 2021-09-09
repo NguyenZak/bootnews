@@ -1,0 +1,51 @@
+/*------------------------------------
+  Timeline Blog List
+------------------------------------*/
+.timeline-post {
+    list-style-type: none;
+    position: relative;
+    &:before {
+        content: ' ';
+        background: $timeline-post-before-background;
+        display: inline-block;
+        position: absolute;
+        left: $timeline-post-before-left;
+        width: $timeline-post-before-width;
+        height: 100%;
+        z-index: 5;
+    }
+    > li {
+        margin: $timeline-post-li-margin;
+        padding-left: $timeline-post-li-padding-left;
+        padding-right: $timeline-post-li-padding-right;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:before {
+            content: ' ';
+            background: $timeline-post-li-before-background;
+            display: inline-block;
+            position: absolute;
+            margin-top: .3rem;
+            border-radius: 50%;
+            border: $timeline-post-li-before-border;
+            left: $timeline-post-li-before-left;
+            width: $timeline-post-li-before-width;
+            height: $timeline-post-li-before-height;
+            z-index: 5;
+        }
+        &:hover{
+            &:before{
+                background: $timeline-post-hover-before-background !important;
+            }
+        }
+		a {
+			.timeline-date, .timeline-title {
+                padding-left: $timeline-post-date-padding-left;
+                &:hover{
+                    color: $timeline-post-date-color !important;
+                }
+            }
+		}
+    }
+}

@@ -1,0 +1,31 @@
+/*------------------------------------
+  Suggestion post
+------------------------------------*/
+.suggestion-box {
+	position: fixed;
+	z-index: 999;
+	bottom: $sugestion-bottom;
+	right: $sugestion-right;
+	width: $sugestion-width;
+	border: $sugestion-border;
+	border-top: $sugestion-border-top;
+	padding: $sugestion-padding;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	&.show{
+		right: 0;
+	}
+	&.close{
+		display: none;
+	}
+}
+.close-suggestion {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: $sugestion-close-padding;
+	font-size: $sugestion-close-font-size;
+	cursor: pointer;
+}

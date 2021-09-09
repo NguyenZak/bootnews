@@ -1,0 +1,138 @@
+/*------------------------------------
+  Footer
+------------------------------------*/
+.footer-logo {
+	max-width: 80%;
+}
+.footer-page-list {
+	li{
+		display: inline;
+		margin-right: 1rem;
+	}
+}
+.copyright-text {
+	margin-bottom: 0;
+}
+// footer background
+.bg-footer{
+	background-image: $bg-footer;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	&::before{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		content: '';
+		background-color: $bg-footer-before;
+	}
+}
+// mobile block footer menu
+@include media-breakpoint-down(sm) {
+	.footer-copyright{
+		.navbar {
+			-ms-flex-flow: column;
+			flex-flow: column;
+			.navbar-nav {
+				margin-left: inherit !important;
+				&.footer-nav {
+					width: 100%;
+					flex-direction: inherit;
+					margin-bottom: 1rem;
+					li {
+						a {
+							width: 100%;
+							padding: 15px 0;
+							border-bottom: $border-smooth 1px solid;
+							&:hover {
+								color: $white;
+							}
+						}
+					}
+				}
+				&.footer-nav-right {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	.footer-light {
+		.footer-copyright{
+			.navbar {
+				.navbar-nav {
+					&.footer-nav {
+						li {
+							a {
+								border-color: $border-smooth-light !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// footer dark
+.footer-dark, .layout-dark{
+	color: $color_dark_footer;
+	p, h1, h2,h3,h4,h5 {
+		color: $color_dark_footer;
+	}
+	a {
+		color: $color_dark_footer;
+		border-color: $color_dark_footer;
+		&:hover {
+			color: $primary;
+		}
+	}
+	a.btn {
+		color: $color_dark_footer;
+		border-color: $color_dark_footer;
+		&:hover {
+			color: $primary;
+		}
+	}
+	li {
+		a {
+			color: $color_dark_footer;
+		}
+		&:hover a {
+			color: $primary;
+		}
+	}
+}
+// footer light
+.footer-light{
+	color: $color_light_footer;
+	p {
+		color: $color_light_footer;
+	}
+	a {
+		color: $color_light_footer;
+		border-color: $color_light_footer;
+		&:hover {
+			color: $black;
+		}
+	}
+	a.btn {
+		color: $color_light_footer;
+		border-color: $color_light_footer;
+		&:hover {
+			color: $primary;
+		}
+	}
+	li {
+		a {
+			color: $color_light_footer;
+		}
+		&:hover a {
+			color: $black;
+		}
+	}
+	.border-smooth {
+		border-color: $border-smooth-light !important;
+	}
+}

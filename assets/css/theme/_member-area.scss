@@ -1,0 +1,94 @@
+/*------------------------------------
+	Member area
+------------------------------------*/
+//@extend-elements
+//original selectors
+//.sidebar-item.active, .sidebar-item:hover
+%extend_area {
+	background-color: $sidebar-item-active-bg;
+	border: $sidebar-item-active-border;
+	border-right: 0;
+	margin-right: $sidebar-item-m-right;
+}
+
+.sidebar-menu {
+	border-bottom: $sidebar-menu-border;
+	border-top: $sidebar-menu-border;
+	border-right: $sidebar-menu-border;
+	padding-bottom: $sidebar-menu-padding;
+	padding-top: $sidebar-menu-padding;
+	background-color: $sidebar-menu-bg;
+	li {
+		a{
+			&.active, &:hover {
+			    background-color: $white;
+			}
+		}
+	}
+}
+.sidebar-item {
+	position: relative;
+	display: block;
+	padding: $sidebar-item-padding;
+	margin-bottom: $sidebar-item-m-bottom;
+	border: $sidebar-item-border;
+	&.active {
+		@extend %extend_area;
+		&:hover {
+			background-color: $white;
+		}
+	}
+	&:hover {
+		@extend %extend_area;
+	}
+}
+
+.card {
+	.icon-big {
+		font-size: $icon-big-font;
+		.notif {
+			position: absolute;
+			min-width: $icon-notif-min-width;
+			border-radius: $icon-notif-border-radius;
+			font-size: $icon-notif-font;
+			background: $icon-notif-bg;
+			color: $icon-notif-color;
+		}
+	}
+	.numbers {
+		$numbers-font: 2em;
+		text-align: right;
+		p {
+			font-size: $number-p-font;
+			margin: 0;
+		}
+	}
+	.footer {
+		padding: $card-footer-padding;
+		line-height: $card-footer-height;
+	}
+}
+.side-notif {
+	padding-left: $side-notif-padding;
+	padding-right: $side-notif-padding;
+	font-size: $side-notif-font;
+	border-radius: $icon-notif-border-radius;
+	background-color: $icon-notif-bg;
+	color: $icon-notif-color;
+}
+.statistics li {
+	padding: $statistic-li-padding;
+}
+.member-item:hover .card {
+	background-color: $member-item-bg-hover;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: $table-odd;
+}
+@include media-breakpoint-down(sm) {
+    .sidebar-item.active, .sidebar-item:hover {
+        border-right: $sidebar-item-mobile-active-b-right;
+        margin-left: $sidebar-item-mobile-active-m-left;
+        margin-right: $sidebar-item-mobile-active-m-right;
+    }
+}

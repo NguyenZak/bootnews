@@ -1,0 +1,48 @@
+/*------------------------------------
+  Youtube Playlist
+------------------------------------*/
+.playlist-title{
+    max-height: $playlist-title-max-height;
+    overflow: auto;
+    li{ 
+        padding: $playlist-title-li-padding;
+        &:hover {
+            background-color: $playlist-title-li-hover-background;
+            cursor: pointer;
+        }
+        &.active {
+            background-color: $playlist-title-li-active-background;
+            cursor: pointer;
+            .video-thumb {
+                border: $playlist-title-li-active-border;
+            }
+        }
+        .video-thumb {
+            margin-right: $playlist-title-li-thumb-margin-right;
+            display: inline-block;
+            vertical-align: middle;
+            border: $playlist-title-li-thumb-border;
+        }
+        .video-title {
+            margin: 0;
+            display: inline;
+            vertical-align: middle;
+            text-align: left;
+            color: $light;
+        }
+    }
+}
+.video-full {
+    iframe {
+        width: 100% !important;
+        height: 100% !important;
+        border: 0;
+    }
+}
+.video-youtube-area {
+    iframe, source {
+        width: 100% !important;
+        border: 0;
+        height: 160%
+    }
+}

@@ -1,0 +1,54 @@
+/*------------------------------------
+	Color
+------------------------------------*/
+a {
+	color: $color_a;
+}
+h1 , h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $color_fonts;
+	> a {
+		color: $color_fonts;
+		-webkit-font-smoothing: antialiased;
+	}
+	> .btn {
+		a{
+			color: $white;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+p {
+	color: $color_p;
+}
+/*------------------------------------
+  Extra color
+------------------------------------*/
+@each $color, $value in $morecolors {
+	.bg-#{$color} {
+		background-color: $value !important;
+	}
+	.text-#{$color} {
+		color: $value !important;
+	}
+	.border-#{$color} {
+		border-color: $value !important;
+	}
+}
+.bg-themes {
+	background: $white !important;
+}
+.bg-light-dark, .bg-light-black {
+	background: $light !important;
+}
+.black {
+	a{
+		color: $black;
+	}
+}
+.white {
+	a {
+		color: $white;
+	}
+}

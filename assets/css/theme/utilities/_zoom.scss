@@ -1,0 +1,31 @@
+/*------------------------------------
+	Zoom
+------------------------------------*/
+.overflow {
+	position: relative;
+	overflow: hidden;
+	img {
+		position: relative;
+		display: block;
+	}
+	video {
+		position: relative;
+		display: block;
+	}
+}
+.zoom {
+	img {
+		transition: $zoom-media-transition;
+	}
+	video {
+		transition: $zoom-media-transition;
+	}
+	&:hover {
+		img {
+			transform: $zoom-media-transform;
+		}
+		video {
+			transform: $zoom-media-transform;
+		}
+	}
+}

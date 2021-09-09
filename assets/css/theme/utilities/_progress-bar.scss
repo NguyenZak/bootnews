@@ -1,0 +1,27 @@
+/*------------------------------------
+	Progress bars
+------------------------------------*/
+#progress-bar {
+	z-index: 2000;
+	background: $progress-scroll-bg;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border: none;
+}
+.progress-one {
+	height: $progress-1-height;
+}
+.progress-two {
+	height: $progress-2-height;
+}
+.progress-three {
+	height: $progress-3-height;
+}
+progress {
+  color: $progress-color;
+}
+progress::-webkit-progress-value, progress::-moz-progress-bar, progress::-webkit-progress-value, progress::-webkit-progress-bar {
+  background: $progress-bg-value;
+}

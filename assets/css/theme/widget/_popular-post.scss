@@ -1,0 +1,27 @@
+/*------------------------------------
+	Popular post
+------------------------------------*/
+.post-number {
+	counter-reset: my-counter;
+	li {
+		margin-bottom: $post-number-li-margin;
+		padding: $post-number-li-padding;
+		a::before {
+			font-size: $font-size-post-number;
+			font-weight: $font-weight-600;
+			counter-increment: my-counter;
+			content: counter(my-counter);
+			float: left;
+			color: $post-number-a-color !important;
+			width: $post-number-a-width;
+			margin-right: $post-number-a-right;
+			line-height: $post-number-a-line;
+			text-align: center;
+		}
+		&:hover {
+			a::before {
+				color: $primary !important;
+			}
+		}
+	}
+}
