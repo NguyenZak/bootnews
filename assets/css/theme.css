@@ -2317,7 +2317,7 @@ progress {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: 0;
+    border-radius: 10px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -2715,6 +2715,7 @@ textarea.form-control-lg {
     clip: rect(0, 0, 0, 0);
     pointer-events: none;
 }
+
 
 .btn-check[disabled]+.btn,
 .btn-check:disabled+.btn {
@@ -3265,7 +3266,7 @@ textarea.form-control.is-invalid {
     border: 1px solid transparent;
     padding: 0.75rem 1rem;
     font-size: 0.875rem;
-    border-radius: 0;
+    border-radius: 10px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -3979,7 +3980,8 @@ fieldset:disabled .btn {
 }
 
 .btn-link:hover {
-    color: #7246e5;
+    background-size: 100% 6%;
+    color: #0e67aa;
 }
 
 .btn-link:disabled,
@@ -15216,7 +15218,6 @@ p {
         top: 0;
         width: 100%;
     }
-}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .boxed .mobile-sticky.is-sticky,
@@ -19005,6 +19006,7 @@ p {
 
 .post-content figure {
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .post-content figure .b-lazy {
@@ -19918,6 +19920,7 @@ p {
 .avatar-md {
     width: 4.6875rem;
     height: 4.6875rem;
+    border-radius: 10px;
 }
 
 .avatar-lg {
