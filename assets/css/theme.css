@@ -582,10 +582,9 @@ progress {
 .img-thumbnail {
     background-color: #fff;
     border: 1px solid #dee2e6;
-    border-radius: 10px;
-    height: 100px;
-    width: auto;
-    object-fit: cover;
+    height: auto;
+    width: 100%;
+    object-fit: scale-down;
 }
 
 .figure {
@@ -15906,7 +15905,7 @@ p {
 .ratio_950-500,
 .ratio_1200-900 {
     height: 0;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .ratio_category,
