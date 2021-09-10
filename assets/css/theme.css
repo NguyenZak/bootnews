@@ -560,17 +560,32 @@ progress {
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    height: 250px;
+    position: center;
+    size: 100%;
+    object-fit: cover;
+}
+.img-slider {
+    height: 614px;
+    width: auto;
+    object-fit: cover;
+}
+.img-thumbnailbig {
+    max-width: auto;
+    height: 300px;
+    position: center;
+    size: 100%;
+    object-fit: cover;
 }
 
 .img-thumbnail {
-    padding: 0.25rem;
     background-color: #fff;
     border: 1px solid #dee2e6;
-    border-radius: 0;
-    max-width: 100%;
-    height: auto;
+    border-radius: 10px;
+    height: 100px;
+    width: auto;
+    object-fit: cover;
 }
 
 .figure {
@@ -653,7 +668,6 @@ progress {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    flex-shrink: 0 !important;
     margin-top: calc(var(--bs-gutter-y) * -1);
     margin-right: calc(var(--bs-gutter-x) * -.5);
     margin-left: calc(var(--bs-gutter-x) * -.5);
@@ -1235,7 +1249,7 @@ progress {
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
         width: 50%;
-        height: 650px;
+        height: auto;
     }
     .col-md-7 {
         -ms-flex: 0 0 auto;
@@ -15794,9 +15808,12 @@ p {
     background-color: #f8f9fa;
     overflow: hidden;
     width: 100%;
+    display: inline-block;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);;
     background: linear-gradient(to left, #f8f9fa 0%, #ced4da 15%, #f8f9fa 40%, #f8f9fa 100%);
-    background-size: 400% 700% !important;
+    background-size: 200% 700% !important;
     background-position: center center !important;
     -webkit-animation: AnimationSea 1.5s infinite linear forwards;
     animation: AnimationSea 1.5s infinite linear forwards;
@@ -15921,7 +15938,7 @@ p {
 .ratio_203-114,
 .ratio_251-141,
 .ratio_372-208 {
-    padding-bottom: 56.0085837%;
+    padding-bottom: 70%;
     border-radius: 10px;
 }
 
@@ -16524,19 +16541,24 @@ p {
 ------------------------------------*/
 
 .featured-one .height-ratio {
-    padding-bottom: 85%;
-    height: 0px;
+    padding-bottom: 80%;
+    height: auto;
 }
 
 .featured-1 .height-ratio {
+    display: center;
+    object-fit: cover;
     border-radius: 10px;
-    padding-bottom: 85%;
-    height: 0;
+    overflow: hidden;
+    padding-bottom: 80%;
+    height: 614px;
+    width: auto;
 }
 
 .featured-1 .newsbox .height-ratio {
-    padding-bottom: 85%;
-    height: 0;
+    padding-bottom: 80%;
+    height: 250px;
+    width: auto;
 }
 
 .featured-1 .newsbox>article:nth-child(1) {
@@ -19574,7 +19596,7 @@ p {
 .flickity-viewport {
     overflow: hidden;
     position: relative;
-    height: 100%;
+    height: auto;
 }
 
 .flickity-slider {
