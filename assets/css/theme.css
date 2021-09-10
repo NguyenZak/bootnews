@@ -15204,8 +15204,8 @@ p {
         padding: 1rem .5rem .5rem;
     }
     /*No sticky mobile*/
-    .no-md-sticky {
-        position: relative;
+    /* .no-md-sticky {
+        position: relative; */
     }
     #wpadminbar {
         position: fixed !important;
