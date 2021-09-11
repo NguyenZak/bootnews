@@ -48,10 +48,10 @@
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
     --bs-body-rgb: 27, 27, 27;
-    --bs-font-sans-serif: Poppins, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-sans-serif: Segoe UI, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: "Poppins", sans-serif;
+    --bs-body-font-family: "Segoe UI", sans-serif;
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
@@ -14360,7 +14360,7 @@ fieldset:disabled .btn {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 .wrapper {
@@ -14742,7 +14742,7 @@ p {
 .font-family .h4,
 .font-family .h5,
 .font-family .h6 {
-    font-family: "Poppins", Helvetica, sans-serif;
+    font-family: "Segoe UI", Helvetica, sans-serif;
 }
 
 .font-family .navbar-nav,
@@ -14750,11 +14750,11 @@ p {
 .font-family .u-breadcrumb,
 .font-family .title-comments .authors,
 .font-family .prev-next-post a {
-    font-family: "Poppins", Helvetica, sans-serif;
+    font-family: "Segoe UI", Helvetica, sans-serif;
 }
 
 .post-content {
-    font-family: "Poppins", sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 /*------------------------------------
@@ -15795,7 +15795,7 @@ p {
 }
 
 .u-breadcrumb .breadcrumb-item {
-    font-family: "Poppins", sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 .u-breadcrumb .breadcrumb-item a {
@@ -16513,15 +16513,15 @@ p {
 }
 
 .footer-light {
-    color: #6c757d;
+    color: #000;
 }
 
 .footer-light p {
-    color: #6c757d;
+    color: #000;
 }
 
 .footer-light a {
-    color: #6c757d;
+    color: #000;
     border-color: #6c757d;
 }
 
@@ -16530,7 +16530,7 @@ p {
 }
 
 .footer-light a.btn {
-    color: #6c757d;
+    color: #000;
     border-color: #6c757d;
 }
 
@@ -18762,7 +18762,7 @@ p {
     cursor: pointer;
     border: 0;
     font-size: 1rem;
-    font-family: "Poppins";
+    font-family: "Segoe UI";
     letter-spacing: 1px;
     padding: 0.75rem 1rem;
     font-weight: 550;
@@ -19374,13 +19374,13 @@ p {
 
 .recentcomments a {
     font-style: italic;
-    font-family: "Poppins", Helvetica, sans-serif !important;
+    font-family: "Segoe UI", Helvetica, sans-serif !important;
     font-size: 0.875rem;
 }
 
 .recentcomments .comment-author-link {
     font-style: italic;
-    font-family: "Poppins", Helvetica, sans-serif !important;
+    font-family: "Segoe UI", Helvetica, sans-serif !important;
     font-size: 0.875rem;
 }
 
@@ -19483,7 +19483,7 @@ p {
 
 .post-content .tags-list li:first-child {
     padding-left: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Segoe UI", sans-serif;
     background-color: transparent;
     border-color: transparent !important;
     font-weight: 500;
