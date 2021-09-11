@@ -575,6 +575,11 @@ progress {
     width: auto;
     object-fit: cover;
 }
+.img-slider-bot {
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+}
 .img-thumbnailbig {
     max-width: auto;
     height: 300px;
@@ -15942,7 +15947,7 @@ p {
 .ratio_203-114,
 .ratio_251-141,
 .ratio_372-208 {
-    padding-bottom: 70%;
+    padding-bottom: 55%;
     border-radius: 10px;
 }
 
@@ -18750,12 +18755,13 @@ p {
     background: transparent;
     cursor: pointer;
     border: 0;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-family: "Poppins";
     letter-spacing: 1px;
     padding: 0.75rem 1rem;
-    font-weight: 500;
+    font-weight: 550;
     text-decoration: none;
+    text-transform: uppercase;
     position: relative;
     z-index: 2000;
 }
