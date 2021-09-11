@@ -20565,12 +20565,12 @@ p {
 }
 
 .playlist-title li:hover {
-    background-color: #1b1b1b;
+    background-color: #0e67aa;
     cursor: pointer;
 }
 
 .playlist-title li.active {
-    background-color: #1b1b1b;
+    background-color: #0e67aa;
     cursor: pointer;
 }
 
@@ -20590,7 +20590,7 @@ p {
     display: inline;
     vertical-align: middle;
     text-align: left;
-    color: #f8f9fa;
+    color: #000000;
 }
 
 .video-full iframe {
