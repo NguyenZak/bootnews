@@ -565,7 +565,7 @@ progress {
 
 .img-fluid {
     max-width: auto;
-    height: 250px;
+    height: 298px;
     position: center;
     size: 100%;
     object-fit: cover;
@@ -5263,7 +5263,7 @@ fieldset:disabled .btn {
 }
 
 .card-title {
-    margin-bottom: 0.83333rem;
+    margin-bottom: 0.33333rem;
 }
 
 .card-subtitle {
@@ -5648,8 +5648,8 @@ fieldset:disabled .btn {
 .badge {
     display: inline-block;
     padding: 0.35em 0.65em;
-    font-size: 0.75em;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 500;
     line-height: 1;
     color: #fff;
     text-align: center;
@@ -7797,6 +7797,8 @@ fieldset:disabled .btn {
 }
 
 .position-absolute {
+    display: flex;
+    justify-content: space-around;
     position: absolute !important;
 }
 
@@ -8896,7 +8898,10 @@ fieldset:disabled .btn {
 }
 
 .p-1 {
-    padding: 0.25rem !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;;
 }
 
 .p-2 {
@@ -8908,7 +8913,7 @@ fieldset:disabled .btn {
 }
 
 .p-4 {
-    padding: 1.5rem !important;
+    padding: 1rem !important;
 }
 
 .p-5 {
@@ -14822,9 +14827,9 @@ p {
 
 .mobile-logo {
     min-height: 40px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    max-height: 2.5rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    max-height: 3rem;
 }
 
 .top-menu,
@@ -16566,8 +16571,9 @@ p {
 
 .featured-1 .newsbox .height-ratio {
     padding-bottom: 80%;
-    height: 250px;
+    height: 297px;
     width: auto;
+    margin-bottom: 0.5rem;
 }
 
 .featured-1 .newsbox>article:nth-child(1) {
