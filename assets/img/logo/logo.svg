@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Shape_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 159.9 67.9" style="enable-background:new 0 0 159.9 67.9;" xml:space="preserve">
+	 viewBox="0 0 159.9 53.4" style="enable-background:new 0 0 159.9 53.4;" xml:space="preserve">
 <style type="text/css">
 	.st0{clip-path:url(#SVGID_2_);fill:url(#SVGID_3_);}
 	.st1{fill:#0E67AA;}
@@ -9,23 +9,25 @@
 </style>
 <g>
 	<g>
-		<defs>
-			<path id="SVGID_1_" d="M24.6,19.5H4.3l9.1,13.4C33.3,24,50,20.7,50,20.7s-30.1,10-49.3,29.7l18.4-9.3L28.3,53l4.8-20.7l21.1-12.8
-				h-18L40,0L24.6,19.5z"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-		</clipPath>
-		
-			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-382.3732" y1="-416.9673" x2="-382.131" y2="-416.9673" gradientTransform="matrix(130.7813 -226.5198 226.5198 130.7813 144468.9844 -32027.5371)">
-			<stop  offset="0" style="stop-color:#00B3FF"/>
-			<stop  offset="0.2119" style="stop-color:#00C1C9"/>
-			<stop  offset="0.5965" style="stop-color:#00DA6D"/>
-			<stop  offset="0.8663" style="stop-color:#00EA33"/>
-			<stop  offset="0.995" style="stop-color:#00F01C"/>
-			<stop  offset="1" style="stop-color:#00F01C"/>
-		</linearGradient>
-		<polygon class="st0" points="-22.3,39.8 14.1,-23.1 77.1,13.3 40.8,76.2 		"/>
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M24.6,19.5H4.3l9.1,13.4C33.3,24,50,20.7,50,20.7s-30.1,10-49.3,29.7l18.4-9.3L28.3,53l4.8-20.7
+					l21.1-12.8h-18L40,0L24.6,19.5z"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-600.2397" y1="870.399" x2="-599.9976" y2="870.399" gradientTransform="matrix(130.7813 -226.5198 -226.5198 -130.7813 275673.125 -22078.2305)">
+				<stop  offset="0" style="stop-color:#00B3FF"/>
+				<stop  offset="0.2119" style="stop-color:#00C1C9"/>
+				<stop  offset="0.5965" style="stop-color:#00DA6D"/>
+				<stop  offset="0.8663" style="stop-color:#00EA33"/>
+				<stop  offset="0.995" style="stop-color:#00F01C"/>
+				<stop  offset="1" style="stop-color:#00F01C"/>
+			</linearGradient>
+			<polygon class="st0" points="-22.3,39.8 14.1,-23.1 77.1,13.3 40.8,76.2 			"/>
+		</g>
 	</g>
 </g>
 <path class="st1" d="M41,39.4l2.2-2.3c1.2,1.1,2.5,1.7,3.8,1.7c0.8,0,1.4-0.4,1.4-0.9s-0.3-0.7-2.1-1.4c-2-0.7-3.2-1.6-3.2-3.4

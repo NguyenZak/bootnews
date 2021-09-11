@@ -2317,7 +2317,7 @@ progress {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: 10px;
+    border-radius: 0px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -11797,8 +11797,8 @@ fieldset:disabled .btn {
         margin-bottom: 1rem !important;
     }
     .my-lg-4 {
-        margin-top: 1.5rem !important;
-        margin-bottom: 1.5rem !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
     }
     .my-lg-5 {
         margin-top: 3rem !important;
@@ -14542,7 +14542,7 @@ h6>.btn a:hover,
 }
 
 p {
-    color: #495057;
+    color: #6a6a6b;
 }
 
 /*------------------------------------
@@ -14802,9 +14802,9 @@ p {
 ------------------------------------*/
 
 .main-logo img {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: 14.875rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    max-width: 16rem;
 }
 
 .logo-six {
@@ -15968,7 +15968,7 @@ p {
 .ratio_115-80,
 .ratio_110-77 {
     padding-bottom: 69.5%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .ratio_1200-900 {
@@ -21256,7 +21256,7 @@ h6>a:hover,
         font-size: 1.125rem;
     }
     .h5-sm {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .h6-sm {
         font-size: 0.875rem;
@@ -21304,7 +21304,7 @@ h6>a:hover,
         font-size: 1rem;
     }
     .h6-md {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
     .lead-md {
         font-size: 1.25rem;
@@ -21349,7 +21349,7 @@ h6>a:hover,
         font-size: 1rem;
     }
     .h6-lg {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
     .lead-lg {
         font-size: 1.25rem;
