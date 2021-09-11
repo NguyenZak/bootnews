@@ -142,6 +142,10 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+  }
 
 abbr[title],
 abbr[data-bs-original-title] {
@@ -582,9 +586,9 @@ progress {
 .img-thumbnail {
     background-color: #fff;
     border: 1px solid #dee2e6;
-    height: auto;
-    width: 100%;
-    object-fit: scale-down;
+    height: 200px;
+    width: auto;
+    object-fit: cover;
 }
 
 .figure {
@@ -750,7 +754,7 @@ progress {
 .col-3 {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    width: 25%;
+    width: 50%;
 }
 
 .col-4 {
@@ -786,7 +790,7 @@ progress {
 .col-9 {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    width: 75%;
+    width: 50%;
 }
 
 .col-10 {
@@ -1237,7 +1241,7 @@ progress {
     .col-md-4 {
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-        width: 33.33333%;
+        width: 45%;
     }
     .col-md-5 {
         -ms-flex: 0 0 auto;
@@ -1258,7 +1262,7 @@ progress {
     .col-md-8 {
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-        width: 66.66667%;
+        width: 55%;
     }
     .col-md-9 {
         -ms-flex: 0 0 auto;
@@ -3266,7 +3270,7 @@ textarea.form-control.is-invalid {
     border: 1px solid transparent;
     padding: 0.75rem 1rem;
     font-size: 0.875rem;
-    border-radius: 10px;
+    border-radius: 0px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -5561,14 +5565,14 @@ fieldset:disabled .btn {
 
 .page-link:hover {
     z-index: 2;
-    color: #7246e5;
+    color: #53b136;
     background-color: #e9ecef;
     border-color: #dee2e6;
 }
 
 .page-link:focus {
     z-index: 3;
-    color: #7246e5;
+    color: #0e67aa;
     background-color: #e9ecef;
     outline: 0;
     box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
@@ -15967,7 +15971,7 @@ p {
 .ratio_160-112,
 .ratio_115-80,
 .ratio_110-77 {
-    padding-bottom: 69.5%;
+    padding-bottom: 100%;
     border-radius: 5px;
 }
 
@@ -17707,7 +17711,7 @@ p {
 .widget {
     position: relative;
     clear: both;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 }
 
 .block-area .btn {
@@ -21210,7 +21214,7 @@ h6>a:hover,
 }
 
 .h6 {
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .lead {
@@ -22408,7 +22412,7 @@ h6>a:hover,
 
 .py-05,
 .pb-05 {
-    padding-bottom: 0.125rem !important;
+    padding-bottom: 0.8rem !important;
 }
 
 @media (min-width: 576px) {
